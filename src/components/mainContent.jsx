@@ -30,7 +30,7 @@ export const Content = () => {
 
       <div className=" pt-8 mb-20  lg:mb-40 lg:w-[40%]">
         <h1 className=" relative w-fit font-extrabold text-4xl lg:text-5xl mb-1 lg:mb-20">
-          What we do
+        Priority Access
           <img
             src="images/Line6.png"
             alt="line"

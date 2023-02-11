@@ -34,7 +34,7 @@ export const Content = () => {
           <img
             src="images/Line6.png"
             alt="line"
-            className="absolute hidden lg:block top-[100%] left-[15%]"
+            className="absolute hidden lg:block top-[118%] left-[15%]"
           />
         </h1>
         <p className=" relative font-medium md:text-xl">

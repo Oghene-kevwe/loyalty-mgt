@@ -101,7 +101,7 @@ const Form = ({ setshowPopup, showPopup }) => {
       <img
         src="images/ArrowHeader.png"
         alt="arrow"
-        className="absolute hidden lg:block right-[15%] -top-[30%]  "
+        className="absolute hidden lg:block right-[15%] -top-[20%]  "
       />
       <div className=" mb-4 h-[3rem] flex items-center relative  w-4/5 max-w-[27rem] border px-[12px] py-2 border-light rounded-md mr-auto ml-auto">
         <img src="images/profilecircle.svg" alt="" />

@@ -7,7 +7,7 @@ export const NavBar = () => {
 
     <div className=" p-[1.5px] rounded-full bg-gradient-to-r from-[#5404FF] to-[#BD3BD2F0]">
         <button className=" bg-primary rounded-full px-4 py-1 md:px-6 md:py-2 ">
-          Request a call
+        Get Priority Access
         </button>
       </div>
     </nav>

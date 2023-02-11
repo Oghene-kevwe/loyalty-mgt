@@ -38,11 +38,7 @@ export const Content = () => {
           />
         </h1>
         <p className=" relative font-medium md:text-xl">
-          Loyalbaze, empowers businesses to offer digital, mobile-first loyalty
-          programs to their customers. With our AI Powered platform, you can
-          easily create and manage custom loyalty and rewards programs, track
-          customer engagement, and gain valuable insights to improve your
-          business.
+        Get ready to revolutionize the way you interact with your customers and drive sales with Loyalbaze. Skip the waitlist and get exclusive priority access to LoyalBaze. Limited slots available. Please tell us a bit about your business and needs and of our consultants will be in touch Immediately!
           <img
             src="images/StarHeader.png"
             alt="star"

@@ -63,9 +63,7 @@ export const Header = () => {
         <span className=" text-[#A75FD2]">Loyal fans</span>
       </h1>
       <p className=" mb-10 text-center md:text-xl w-[80%] mr-auto ml-auto">
-        Get ready to revolutionize the way you interact with your customers and
-        drive sales with Loyalbaze. Join the waiting list now to be among the
-        first to experience the future of customer loyalty.
+       Loyalbaze, empowers businesses to offer digital, mobile-first loyalty programs to their customers. With our AI Powered platform, you can easily create and manage custom loyalty and rewards programs, track customer engagement, and gain valuable insights to improve your business. Sign up now to get early access.
       </p>
       <Form setshowPopup={setshowPopup} showPopup={showPopup} />
       {/* avatars */}

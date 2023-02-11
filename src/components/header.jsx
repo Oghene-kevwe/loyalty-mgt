@@ -1,6 +1,20 @@
+import { useState } from "react";
+import { Popup } from "./popup";
+
 export const Header = () => {
+  const [showPopup, setshowPopup] = useState(false);
+
+  function removePopup() {
+    if (showPopup) {
+      setshowPopup(false);
+    }
+  }
+
   return (
-    <header className=" relative  px-[4vw] pb-28 md:pb-32 md:px-10">
+    <header
+      onClick={removePopup}
+      className="relative px-[4vw] pb-28 md:pb-32 md:px-10"
+    >
       {/* decorations */}
       {/* ellipse */}
       <img
@@ -44,7 +58,6 @@ export const Header = () => {
       />
 
       {/* end of decorations */}
-
       <h1 className=" w-4/5 mr-auto ml-auto  text-4xl text-center md:text-5xl font-extrabold mb-2 ">
         Turn your best customers into{" "}
         <span className=" text-[#A75FD2]">Loyal fans</span>
@@ -54,7 +67,8 @@ export const Header = () => {
         drive sales with Loyalbaze. Join the waiting list now to be among the
         first to experience the future of customer loyalty.
       </p>
-      <Form />
+      <Form setshowPopup={setshowPopup} showPopup={showPopup} />
+      {/* avatars */}
       <div className=" flex justify-between items-center w-[80%] max-w-[13rem] mr-auto ml-auto ">
         <div>
           <button className=" w-[32px] h-[32px] relative  rounded-full bg-[#175CE1]">
@@ -76,9 +90,15 @@ export const Header = () => {
   );
 };
 
-const Form = () => {
+const Form = ({ setshowPopup, showPopup }) => {
+  function handleSubmit(e) {
+    e.preventDefault();
+    setshowPopup(true);
+  }
+
   return (
-    <form className="relative md:text-xl">
+    <form onSubmit={handleSubmit} className="relative md:text-xl">
+      {showPopup && <Popup />}
       {/* arrow */}
       <img
         src="images/ArrowHeader.png"
@@ -90,6 +110,7 @@ const Form = () => {
         <input
           className=" absolute bg-transparent left-11 outline-none placeholder:text-light placeholder:font-thin"
           type="text"
+          required
           placeholder="Tell us your name"
         />
       </div>
@@ -97,7 +118,8 @@ const Form = () => {
       <div className=" mb-8 h-[3rem] flex items-center relative  w-4/5 max-w-[27rem]  border px-[12px] py-2 border-light rounded-md mr-auto ml-auto">
         <img src="images/mailImg.svg" alt="" />
         <input
-          type="text"
+          type="email"
+          required
           placeholder="Enter your email address"
           className=" absolute bg-transparent left-11 outline-none placeholder:text-light placeholder:font-thin"
         />
